@@ -3,84 +3,70 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Aarnav Saboo | Full-Stack & AI Developer</title>
-  <meta name="description" content="Aarnav Saboo is a full-stack and AI developer building web applications, APIs, SaaS tools, automation and practical AI integrations.">
+  <title>Aarnav Saboo | LLMs, RAG & AI Integrations</title>
+  <meta name="description" content="Aarnav Saboo builds open-source projects around language models, retrieval-augmented generation, document processing and structured AI outputs.">
   <meta name="author" content="Aarnav Saboo">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://aarnavsaboo.github.io/">
   <link rel="stylesheet" href="/styles.css">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Aarnav Saboo | Full-Stack & AI Developer">
-  <meta property="og:description" content="Projects by Aarnav Saboo across full-stack development, APIs and practical AI integrations.">
+  <meta property="og:title" content="Aarnav Saboo | LLMs, RAG & AI Integrations">
+  <meta property="og:description" content="Language models, retrieval pipelines and practical AI integrations. Open-source projects and experiments by Aarnav Saboo.">
   <meta property="og:url" content="https://aarnavsaboo.github.io/">
   <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Aarnav Saboo",
-    "url":"https://aarnavsaboo.github.io/",
-    "jobTitle":"Full-Stack & AI Developer",
-    "description":"Full-stack and AI developer building web applications, APIs, SaaS tools, automation and practical AI integrations.",
-    "sameAs":["https://github.com/aarnavsaboo"]
-  }
+  {"@context":"https://schema.org","@type":"ProfilePage","mainEntity":{"@type":"Person","name":"Aarnav Saboo","url":"https://aarnavsaboo.github.io/","description":"Developer focused on language models, retrieval-augmented generation and AI integrations.","sameAs":["https://github.com/aarnavsaboo"],"knowsAbout":["Large language models","Retrieval-augmented generation","Natural language processing","Information retrieval","AI integrations"]}}
   </script>
 </head>
 <body>
   <main>
-    <nav>
+    <nav aria-label="Main navigation">
       <a class="brand" href="/">Aarnav Saboo</a>
       <a href="https://github.com/aarnavsaboo">GitHub ↗</a>
     </nav>
-
-    <section class="hero">
-      <p class="eyebrow">FULL-STACK · AI · APIS</p>
-      <h1>Aarnav Saboo</h1>
-      <p class="lead">I build web products, developer tools and practical AI integrations.</p>
-      <a class="button" href="#projects">View projects</a>
+    <section class="hero" aria-labelledby="name">
+      <p class="eyebrow">LANGUAGE MODELS · RETRIEVAL · APPLIED NLP</p>
+      <h1 id="name">Aarnav Saboo</h1>
+      <p class="lead">Building practical systems around language models.</p>
+      <p style="max-width:640px;color:var(--muted);font-size:18px;margin-bottom:32px">I work on the pieces between a model and a useful result: getting the right context, connecting inference providers, and turning generated text into something you can actually use.</p>
+      <a class="button" href="#projects">Explore the projects</a>
     </section>
-
-    <section id="projects">
-      <div class="section-title">
-        <span>Selected projects</span>
-        <span>2026</span>
-      </div>
-
+    <section id="projects" aria-labelledby="project-heading">
+      <div class="section-title"><span id="project-heading">Open-source projects</span><span>Python / TypeScript</span></div>
       <div class="grid">
         <a class="card" href="https://github.com/aarnavsaboo/ai-provider-router">
-          <p class="tag">TypeScript · LLMs</p>
+          <p class="tag">01 / MODEL INTEGRATIONS</p>
           <h2>AI Provider Router</h2>
-          <p>A small routing layer for keeping application code independent from a single model provider.</p>
+          <p>Keep model integrations behind one interface. Explore task-based routing, provider adapters and predictable failure handling.</p>
         </a>
-
         <a class="card" href="https://github.com/aarnavsaboo/rag-chunk-kit">
-          <p class="tag">Python · RAG</p>
+          <p class="tag">02 / RETRIEVAL PIPELINES</p>
           <h2>RAG Chunk Kit</h2>
-          <p>A lightweight text and Markdown chunker that produces predictable JSONL for retrieval pipelines.</p>
+          <p>From documents to useful context: inspectable chunking, retrieval experiments and source-linked results for RAG pipelines.</p>
         </a>
-
         <a class="card" href="https://github.com/aarnavsaboo/llm-json-guard">
-          <p class="tag">Python · Structured Output</p>
+          <p class="tag">03 / STRUCTURED EXTRACTION</p>
           <h2>LLM JSON Guard</h2>
-          <p>Small utilities for extracting and validating structured JSON returned by language models.</p>
+          <p>Turn model responses into validated data. Separate parsing, schema checks and task-specific validation from generation.</p>
         </a>
       </div>
     </section>
-
-    <section class="about">
+    <section class="about" aria-labelledby="about-heading">
+      <div><p class="eyebrow">ABOUT</p><h2 id="about-heading">More interested in what works than what sounds impressive.</h2></div>
       <div>
-        <p class="eyebrow">ABOUT</p>
-        <h2>Building useful software without unnecessary complexity.</h2>
-      </div>
-      <div>
-        <p>I'm Aarnav Saboo, a full-stack and AI developer interested in SaaS products, APIs, automation, developer tooling and LLM-powered applications.</p>
-        <p>I usually work with TypeScript, JavaScript, Python, React, Next.js, Node.js, FastAPI, PostgreSQL and modern AI APIs.</p>
+        <p>I'm Aarnav Saboo. My interests sit between applied NLP and the engineering around language models: document processing, retrieval, structured extraction, evaluation and model integrations.</p>
+        <p>I like projects where you can inspect each step. Which passage was retrieved? What changed when the chunk size changed? Did an output actually satisfy the schema, or just look convincing?</p>
+        <p>These repositories are evolving experiments, not claims of a finished platform. The aim is to make the useful parts runnable, testable and easy to build on.</p>
       </div>
     </section>
-
-    <footer>
-      <span>© 2026 Aarnav Saboo</span>
-      <a href="https://github.com/aarnavsaboo">github.com/aarnavsaboo</a>
-    </footer>
+    <section class="about" aria-labelledby="focus-heading">
+      <div><p class="eyebrow">CURRENT FOCUS</p><h2 id="focus-heading">Better context.<br>Measurable outputs.</h2></div>
+      <div>
+        <p><strong>Retrieval-augmented generation.</strong> Document segmentation, lexical and embedding-based retrieval, context assembly and retrieval evaluation.</p>
+        <p><strong>Language-model integrations.</strong> Connecting local and hosted inference to explicit application-level tasks.</p>
+        <p><strong>Structured NLP workflows.</strong> Schema-driven extraction, output validation and feedback loops that can be tested without a live model.</p>
+      </div>
+    </section>
+    <footer><span>© 2026 Aarnav Saboo</span><a href="https://github.com/aarnavsaboo">Code and project documentation ↗</a></footer>
   </main>
 </body>
 </html>
