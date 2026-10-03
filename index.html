@@ -3,70 +3,163 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Aarnav Saboo | LLMs, RAG & AI Integrations</title>
-  <meta name="description" content="Aarnav Saboo builds open-source projects around language models, retrieval-augmented generation, document processing and structured AI outputs.">
+  <title>Aarnav Saboo | Language Model Systems</title>
+  <meta name="description" content="Aarnav Saboo builds language-model systems, local inference tooling, retrieval pipelines, evaluation harnesses and model-serving experiments.">
   <meta name="author" content="Aarnav Saboo">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://aarnavsaboo.github.io/">
   <link rel="stylesheet" href="/styles.css">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Aarnav Saboo | LLMs, RAG & AI Integrations">
-  <meta property="og:description" content="Language models, retrieval pipelines and practical AI integrations. Open-source projects and experiments by Aarnav Saboo.">
+  <meta property="og:title" content="Aarnav Saboo | Language Model Systems">
+  <meta property="og:description" content="Model engineering, local inference, RAG, evaluation and experimental AI infrastructure.">
   <meta property="og:url" content="https://aarnavsaboo.github.io/">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ProfilePage","mainEntity":{"@type":"Person","name":"Aarnav Saboo","url":"https://aarnavsaboo.github.io/","description":"Developer focused on language models, retrieval-augmented generation and AI integrations.","sameAs":["https://github.com/aarnavsaboo"],"knowsAbout":["Large language models","Retrieval-augmented generation","Natural language processing","Information retrieval","AI integrations"]}}
+  {"@context":"https://schema.org","@type":"ProfilePage","mainEntity":{"@type":"Person","name":"Aarnav Saboo","url":"https://aarnavsaboo.github.io/","sameAs":["https://github.com/aarnavsaboo"],"knowsAbout":["Large language models","Model inference","Retrieval-augmented generation","Information retrieval","Model evaluation","MLX","Embedding models"]}}
   </script>
 </head>
 <body>
   <main>
     <nav aria-label="Main navigation">
       <a class="brand" href="/">Aarnav Saboo</a>
-      <a href="https://github.com/aarnavsaboo">GitHub ↗</a>
+      <div class="nav-links">
+        <a href="#systems">Systems</a>
+        <a href="#work">Projects</a>
+        <a href="https://github.com/aarnavsaboo">GitHub ↗</a>
+      </div>
     </nav>
+
     <section class="hero" aria-labelledby="name">
-      <p class="eyebrow">LANGUAGE MODELS · RETRIEVAL · APPLIED NLP</p>
-      <h1 id="name">Aarnav Saboo</h1>
-      <p class="lead">Building practical systems around language models.</p>
-      <p style="max-width:640px;color:var(--muted);font-size:18px;margin-bottom:32px">I work on the pieces between a model and a useful result: getting the right context, connecting inference providers, and turning generated text into something you can actually use.</p>
-      <a class="button" href="#projects">Explore the projects</a>
+      <p class="eyebrow">LANGUAGE MODEL SYSTEMS · INFERENCE · RETRIEVAL · EVALUATION</p>
+      <h1 id="name">Aarnav<br>Saboo</h1>
+      <p class="lead">Engineering systems around modern language models.</p>
+      <p class="intro">Model routing, local inference, retrieval pipelines, structured generation, evaluation infrastructure and controlled experiments for understanding model behavior under real system constraints.</p>
+      <div class="hero-actions">
+        <a class="button" href="#work">View projects</a>
+        <a class="text-link" href="https://github.com/aarnavsaboo">Source repositories ↗</a>
+      </div>
     </section>
-    <section id="projects" aria-labelledby="project-heading">
-      <div class="section-title"><span id="project-heading">Open-source projects</span><span>Python / TypeScript</span></div>
-      <div class="grid">
-        <a class="card" href="https://github.com/aarnavsaboo/ai-provider-router">
-          <p class="tag">01 / MODEL INTEGRATIONS</p>
-          <h2>AI Provider Router</h2>
-          <p>Keep model integrations behind one interface. Explore task-based routing, provider adapters and predictable failure handling.</p>
+
+    <section id="systems" class="systems" aria-labelledby="systems-heading">
+      <div class="section-title">
+        <span id="systems-heading">Engineering focus</span>
+        <span>Model → Runtime → Evaluation</span>
+      </div>
+      <div class="system-grid">
+        <article>
+          <span>01</span>
+          <h2>Model inference</h2>
+          <p>Local and OpenAI-compatible runtimes, provider abstraction, scheduling, bounded concurrency, latency measurement and workload-aware routing.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h2>Retrieval systems</h2>
+          <p>Chunking, lexical and dense retrieval, rank fusion, embeddings, reranking, context assembly and controlled RAG ablations.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h2>Model evaluation</h2>
+          <p>Config-driven experiment matrices, paired comparisons, raw event retention, reproducible metrics and query-level regression analysis.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h2>Inference research</h2>
+          <p>Long-context behavior, prompt reuse, speculative decoding, quantized local models, MLX workflows and throughput/memory trade-offs.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" aria-labelledby="project-heading">
+      <div class="section-title">
+        <span id="project-heading">Selected systems</span>
+        <span>Python / TypeScript</span>
+      </div>
+      <div class="project-grid">
+        <a class="card featured" href="https://github.com/aarnavsaboo/local-llm-bench">
+          <p class="tag">INFERENCE / BENCHMARKING</p>
+          <h2>local-llm-bench</h2>
+          <p>Config-driven local model workload runner with cold/warm measurements, bounded concurrency, raw event storage and latency/throughput reporting.</p>
+          <span class="arrow">↗</span>
+        </a>
+        <a class="card" href="https://github.com/aarnavsaboo/local-model-router">
+          <p class="tag">MODEL ROUTING</p>
+          <h2>local-model-router</h2>
+          <p>Queue-aware routing across local model pools using capability, memory, context, observed throughput and workload constraints.</p>
+          <span class="arrow">↗</span>
+        </a>
+        <a class="card" href="https://github.com/aarnavsaboo/rag-ablation-lab">
+          <p class="tag">RAG / EVALUATION</p>
+          <h2>rag-ablation-lab</h2>
+          <p>Ablation framework for isolating the effect of chunking, retrieval, query rewriting, reranking and evidence-budget choices.</p>
+          <span class="arrow">↗</span>
         </a>
         <a class="card" href="https://github.com/aarnavsaboo/rag-chunk-kit">
-          <p class="tag">02 / RETRIEVAL PIPELINES</p>
-          <h2>RAG Chunk Kit</h2>
-          <p>From documents to useful context: inspectable chunking, retrieval experiments and source-linked results for RAG pipelines.</p>
+          <p class="tag">RETRIEVAL PIPELINES</p>
+          <h2>rag-chunk-kit</h2>
+          <p>Inspectable ingestion, chunking, lexical/dense retrieval, rank fusion and labelled retrieval evaluation for RAG systems.</p>
+          <span class="arrow">↗</span>
+        </a>
+        <a class="card" href="https://github.com/aarnavsaboo/embedding-bench">
+          <p class="tag">EMBEDDING MODELS</p>
+          <h2>embedding-bench</h2>
+          <p>Retrieval-quality and systems benchmark for comparing local embedding models across the same corpus and labelled query set.</p>
+          <span class="arrow">↗</span>
+        </a>
+        <a class="card" href="https://github.com/aarnavsaboo/long-context-lab">
+          <p class="tag">CONTEXT MODELING</p>
+          <h2>long-context-lab</h2>
+          <p>Controlled long-context experiments across full prompts, sliding windows, retrieval and extractive compression strategies.</p>
+          <span class="arrow">↗</span>
+        </a>
+        <a class="card" href="https://github.com/aarnavsaboo/mlx-model-lab">
+          <p class="tag">APPLE SILICON / MLX</p>
+          <h2>mlx-model-lab</h2>
+          <p>Repeatable MLX-oriented workload experiments spanning model loading, quantization, memory behavior and context scaling.</p>
+          <span class="arrow">↗</span>
+        </a>
+        <a class="card" href="https://github.com/aarnavsaboo/speculative-decoding-lab">
+          <p class="tag">DECODING SYSTEMS</p>
+          <h2>speculative-decoding-lab</h2>
+          <p>Baseline-paired experiments for draft-model acceptance, wall-time speedup and memory/throughput trade-offs.</p>
+          <span class="arrow">↗</span>
+        </a>
+        <a class="card" href="https://github.com/aarnavsaboo/prompt-cache-lab">
+          <p class="tag">PROMPT REUSE</p>
+          <h2>prompt-cache-lab</h2>
+          <p>Controlled experiments for repeated prompt prefixes, warmup effects, prefix mutation and observable runtime reuse behavior.</p>
+          <span class="arrow">↗</span>
+        </a>
+        <a class="card" href="https://github.com/aarnavsaboo/ai-provider-router">
+          <p class="tag">INFERENCE ABSTRACTION</p>
+          <h2>ai-provider-router</h2>
+          <p>Typed provider adapters, retries, fallback chains, workload execution and runtime observations behind one model interface.</p>
+          <span class="arrow">↗</span>
         </a>
         <a class="card" href="https://github.com/aarnavsaboo/llm-json-guard">
-          <p class="tag">03 / STRUCTURED EXTRACTION</p>
-          <h2>LLM JSON Guard</h2>
-          <p>Turn model responses into validated data. Separate parsing, schema checks and task-specific validation from generation.</p>
+          <p class="tag">STRUCTURED GENERATION</p>
+          <h2>llm-json-guard</h2>
+          <p>Schema-driven parsing, validation and bounded regeneration loops for structured language-model outputs.</p>
+          <span class="arrow">↗</span>
         </a>
       </div>
     </section>
-    <section class="about" aria-labelledby="about-heading">
-      <div><p class="eyebrow">ABOUT</p><h2 id="about-heading">More interested in what works than what sounds impressive.</h2></div>
+
+    <section class="principles" aria-labelledby="principles-heading">
       <div>
-        <p>I'm Aarnav Saboo. My interests sit between applied NLP and the engineering around language models: document processing, retrieval, structured extraction, evaluation and model integrations.</p>
-        <p>I like projects where you can inspect each step. Which passage was retrieved? What changed when the chunk size changed? Did an output actually satisfy the schema, or just look convincing?</p>
-        <p>These repositories are evolving experiments, not claims of a finished platform. The aim is to make the useful parts runnable, testable and easy to build on.</p>
+        <p class="eyebrow">SYSTEM DESIGN</p>
+        <h2 id="principles-heading">Experiments should produce evidence, not just demos.</h2>
+      </div>
+      <div class="principle-list">
+        <p><strong>Reproducible.</strong> Workloads are described as explicit manifests and expanded into concrete run specifications.</p>
+        <p><strong>Observable.</strong> Raw events, timings, model/runtime metadata and per-query outputs remain available after execution.</p>
+        <p><strong>Comparable.</strong> Baselines and variants are paired wherever possible instead of reducing a system to one headline number.</p>
+        <p><strong>Modular.</strong> Model runtimes, retrieval stages and reporting layers are separated so individual components can be replaced and measured.</p>
       </div>
     </section>
-    <section class="about" aria-labelledby="focus-heading">
-      <div><p class="eyebrow">CURRENT FOCUS</p><h2 id="focus-heading">Better context.<br>Measurable outputs.</h2></div>
-      <div>
-        <p><strong>Retrieval-augmented generation.</strong> Document segmentation, lexical and embedding-based retrieval, context assembly and retrieval evaluation.</p>
-        <p><strong>Language-model integrations.</strong> Connecting local and hosted inference to explicit application-level tasks.</p>
-        <p><strong>Structured NLP workflows.</strong> Schema-driven extraction, output validation and feedback loops that can be tested without a live model.</p>
-      </div>
-    </section>
-    <footer><span>© 2026 Aarnav Saboo</span><a href="https://github.com/aarnavsaboo">Code and project documentation ↗</a></footer>
+
+    <footer>
+      <span>© 2026 Aarnav Saboo</span>
+      <a href="https://github.com/aarnavsaboo">GitHub ↗</a>
+    </footer>
   </main>
 </body>
 </html>
