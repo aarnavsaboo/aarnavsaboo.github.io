@@ -1,19 +1,15 @@
 # Aarnav Saboo
 
-Portfolio and project notes on **language models, retrieval-augmented generation, applied NLP and AI integrations**.
+Source for the public project site at **https://aarnavsaboo.github.io/**.
 
-The site introduces three open-source projects:
+The site focuses on language-model engineering: local inference, model routing, retrieval systems, evaluation infrastructure, embeddings, long-context behavior, speculative decoding, prompt reuse and MLX-oriented experiments.
 
-- AI Provider Router — model integrations and task-based inference routing.
-- RAG Chunk Kit — document ingestion, hybrid retrieval and retrieval evaluation.
-- LLM JSON Guard — structured model outputs and schema-driven extraction.
-
-## Preview locally
+## Local preview
 
 ```bash
 python -m http.server 8000
 ```
 
-Open `http://localhost:8000`. This is a static site with no build dependency, analytics or external font requests.
+Open `http://localhost:8000`.
 
-Public site: https://aarnavsaboo.github.io/
+The site is intentionally static: no build step, analytics package or external font dependency.
